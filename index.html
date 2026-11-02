@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#141021" />
+  <meta name="description" content="The Six Thinking Hats applied to Case Scenario 2 — the AI-Powered Exam Preparation App. Dedicated to Riddhi Pankhadiwala Ma'am." />
+  <title>Six Thinking Hats · The Exam App We Can't Stop Loving (and Worrying About)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-hats">
+        <span class="pl orb orb-white"></span>
+        <span class="pl orb orb-blue"></span>
+        <span class="pl orb orb-red"></span>
+        <span class="pl orb orb-black"></span>
+        <span class="pl orb orb-yellow"></span>
+        <span class="pl orb orb-green"></span>
+      </div>
+      <p class="preloader-text">putting on six hats…</p>
+    </div>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="topnav" id="topnav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">🎓</span>
+      <span class="brand-name">Six Thinking Hats</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#scenario">The Scenario</a>
+      <a href="#journey">The Journey</a>
+      <a href="#white">White</a>
+      <a href="#red">Red</a>
+      <a href="#black">Black</a>
+      <a href="#yellow">Yellow</a>
+      <a href="#green">Green</a>
+      <a href="#conclusion">Conclusion</a>
+      <a href="#poster">Poster</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+
+    <div class="hero-inner">
+      <p class="kicker">Critical Thinking · Edward de Bono · Case Scenario 2</p>
+
+      <h1 class="hero-title" aria-label="The Exam App We Can't Stop Loving (and worrying about)">
+        <span class="line">
+          <span class="w" style="--d:.05s">The</span>
+          <span class="w" style="--d:.12s">Exam</span>
+          <span class="w" style="--d:.19s">App</span>
+          <span class="w" style="--d:.26s">We</span>
+          <span class="w" style="--d:.33s">Can't</span>
+          <span class="w" style="--d:.40s">Stop</span>
+          <span class="w" style="--d:.47s">Loving</span>
+        </span>
+        <span class="line amp">
+          <span class="w" style="--d:.58s">(and</span>
+          <span class="w" style="--d:.65s">worrying</span>
+          <span class="w" style="--d:.72s">about)</span>
+        </span>
+      </h1>
+
+      <p class="hero-sub">
+        A little app gives every student instant answers, smart quizzes and a chatty AI
+        that never sleeps. It feels like magic. It also scares our professors. Let's put on
+        six hats and actually <em>think</em> about it — together, honestly, like humans.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#journey" class="btn btn-primary">Start the thinking journey</a>
+        <a href="#scenario" class="btn btn-ghost">First, the story</a>
+      </div>
+
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-heart">♥</span>
+        <span>Dedicated to <strong>Riddhi Pankhadiwala Ma'am</strong></span>
+      </div>
+
+      <div class="hat-strip" aria-hidden="true">
+        <span class="hs hs-white">White · Facts</span>
+        <span class="hs hs-blue">Blue · Process</span>
+        <span class="hs hs-red">Red · Feelings</span>
+        <span class="hs hs-black">Black · Caution</span>
+        <span class="hs hs-yellow">Yellow · Value</span>
+        <span class="hs hs-green">Green · Ideas</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ DEDICATION ============ -->
+  <section class="section dedication" id="dedication">
+    <div class="section-inner">
+      <div class="dedication-card">
+        <div class="ded-seal">🎓</div>
+        <div class="ded-body">
+          <span class="eyebrow">This one is for you</span>
+          <h2>Dedicated to <em>Riddhi Pankhadiwala Ma'am</em></h2>
+          <p>
+            Six Thinking Hats · Critical Thinking · Case Scenario 2 — AI-Powered Exam Preparation App.
+            Made with respect and a lot of thinking, for the teacher who taught us to think.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCENARIO ============ -->
+  <section class="section scenario" id="scenario">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">The human premise</span>
+        <h2 class="shimmer">Two people, one tiny app, a huge worry</h2>
+      </div>
+
+      <div class="scenario-grid">
+        <div class="voice voice-student reveal">
+          <div class="voice-label">🎒 &nbsp;The student says…</div>
+          <p>
+            “It's exam season. I'm tired. I open the app, it makes a quiz that somehow
+            <em>knows</em> exactly what I keep getting wrong, and the chatbot explains things in
+            words I actually understand. I feel calmer. I feel like I'm finally keeping up.
+            Is that so bad?”
+          </p>
+        </div>
+        <div class="voice voice-teacher reveal" style="--d:.15s">
+          <div class="voice-label">📚 &nbsp;The professor worries…</div>
+          <p>
+            “I watch them ace the quiz but stare blankly when I ask <em>why</em>. They're
+            learning to pass, not to understand. The sparks in group discussions are fading.
+            I'm scared we're handing them a shortcut that steals their thinking.”
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario-card reveal tilt-card">
+        <h3>Case Scenario 2 · AI-Powered Exam Preparation App</h3>
+        <p>
+          An ed-tech startup has launched an AI-based mobile app that creates dynamic quizzes,
+          explains concepts in simple terms, tracks weak areas and adapts difficulty for each
+          student. It also includes an AI chatbot that answers doubts instantly.
+          The app is gaining popularity among students — but educators worry it may reduce
+          critical thinking and group learning, and promote shortcut learning over deep understanding.
+        </p>
+        <p class="note">Two truths are standing in the same room. Neither is “wrong.” Our job is to find a path where both are honoured.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>White · Facts</span><span>✦</span>
+      <span>Blue · Process</span><span>✦</span>
+      <span>Red · Feelings</span><span>✦</span>
+      <span>Black · Caution</span><span>✦</span>
+      <span>Yellow · Value</span><span>✦</span>
+      <span>Green · Ideas</span><span>✦</span>
+      <span>White · Facts</span><span>✦</span>
+      <span>Blue · Process</span><span>✦</span>
+      <span>Red · Feelings</span><span>✦</span>
+      <span>Black · Caution</span><span>✦</span>
+      <span>Yellow · Value</span><span>✦</span>
+      <span>Green · Ideas</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ============ JOURNEY NAV ============ -->
+  <section class="section prelude" id="journey">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Six hats, one honest conversation</span>
+        <h2 class="shimmer">Why hats? Because feelings and facts can shout over each other.</h2>
+      </div>
+      <p class="lead">
+        The <strong>Six Thinking Hats</strong> let us wear one colour at a time — facts, then
+        feelings, then fears, then hopes, then ideas — so every side gets a fair turn to speak.
+        We'll walk the path in the classic order: <strong>White → Blue → Red → Black → Yellow → Green</strong>.
+      </p>
+      <div class="mini-hats">
+        <a class="mini reveal" href="#white" style="--hat:#e8e6f0;--ink:#2b2740;--d:.00s">White<br><small>Facts</small></a>
+        <a class="mini reveal" href="#blue" style="--hat:#6fa8dc;--ink:#0d2a4a;--d:.08s">Blue<br><small>Process</small></a>
+        <a class="mini reveal" href="#red" style="--hat:#ef8a88;--ink:#4a1516;--d:.16s">Red<br><small>Feeling</small></a>
+        <a class="mini reveal" href="#black" style="--hat:#3a3846;--ink:#f2efe8;--d:.24s">Black<br><small>Caution</small></a>
+        <a class="mini reveal" href="#yellow" style="--hat:#f4c964;--ink:#4a3605;--d:.32s">Yellow<br><small>Value</small></a>
+        <a class="mini reveal" href="#green" style="--hat:#7fc79a;--ink:#0c3a22;--d:.40s">Green<br><small>Ideas</small></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHITE HAT ============ -->
+  <section class="hat white" id="white">
+    <div class="hat-inner">
+      <div class="hat-mark"><span class="orb orb-white"></span></div>
+      <div class="hat-body">
+        <span class="hat-tag">Hat 1 · Facts &amp; Data</span>
+        <h2 class="shimmer">White Hat — What do we <em>actually</em> know?</h2>
+        <p class="hat-purpose">Purpose: to look at information, evidence and numbers — without judgement, without panic.</p>
+
+        <div class="focus reveal">
+          <h4>Focus · 1. What do we know about this case?</h4>
+          <ul>
+            <li>The app builds <strong>dynamic quizzes</strong> that change based on your answers.</li>
+            <li>It <strong>explains concepts in simple terms</strong> and <strong>tracks weak areas</strong> per student.</li>
+            <li>It <strong>adapts difficulty</strong> — harder when you're strong, gentler when you're stuck.</li>
+            <li>It ships an <strong>instant AI chatbot</strong> for doubts, available 24/7.</li>
+            <li>The app is <strong>genuinely popular</strong> with students — downloads, logins, daily usage keep climbing.</li>
+            <li>Educators report a <strong>visible shift</strong>: quick correct answers, but weaker explanation and discussion.</li>
+            <li>We do <strong>not yet have data</strong> on long-term exam results or true understanding.</li>
+          </ul>
+        </div>
+
+        <div class="focus reveal" style="--d:.1s">
+          <h4>Focus · 2. What information is missing?</h4>
+          <ul>
+            <li>No long-term study of whether heavy users understand more — or just pass more.</li>
+            <li>No data on how group study changed (or stopped) since adoption.</li>
+            <li>No measurement of what the chatbot's "help" actually teaches.</li>
+            <li>Every single fact is currently a <em>guess wrapped in a tech demo</em>.</li>
+          </ul>
+        </div>
+
+        <div class="question reveal">
+          <h4>Question · What facts do we have, and what do we still need?</h4>
+          <p>We have strong evidence of <strong>usage</strong> and <strong>convenience</strong>. We have almost no evidence yet about <strong>deep understanding</strong>. That gap is exactly the heart of the whole debate — so let's keep it in mind as we go.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLUE HAT ============ -->
+  <section class="hat blue" id="blue">
+    <div class="hat-inner">
+      <div class="hat-mark"><span class="orb orb-blue"></span></div>
+      <div class="hat-body">
+        <span class="hat-tag">Hat 2 · Process &amp; Control</span>
+        <h2 class="shimmer">Blue Hat — Let's agree how we'll think</h2>
+        <p class="hat-purpose">Purpose: to run the meeting of minds — set the agenda, keep us on track, and know where we're headed.</p>
+
+        <div class="focus reveal">
+          <h4>Focus · 1. What is our agenda?</h4>
+          <p>Look at the app without love or hate. Weigh its real value against its real risks.
+             Then <strong>design a path</strong> where students gain confidence <em>and</em> keep their ability to think. No banning, no blind adoption.</p>
+        </div>
+
+        <div class="focus reveal" style="--d:.1s">
+          <h4>Focus · 2. The order of the hats</h4>
+          <p class="order-pill">White → Blue → Red → Black → Yellow → Green</p>
+        </div>
+
+        <div class="question reveal">
+          <h4>Question · What is our thinking process?</h4>
+          <p>We use <strong>structured parallel thinking</strong>: one colour at a time, so facts don't get drowned out by fear, and hope doesn't silence caution. When we're done, the Blue Hat returns to gather the <strong>conclusions</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RED HAT ============ -->
+  <section class="hat red" id="red">
+    <div class="hat-inner">
+      <div class="hat-mark"><span class="orb orb-red"></span></div>
+      <div class="hat-body">
+        <span class="hat-tag">Hat 3 · Feelings &amp; Intuition</span>
+        <h2 class="shimmer">Red Hat — How does it <em>feel</em>?</h2>
+        <p class="hat-purpose">Purpose: to speak the heart first — no logic required, no justification needed.</p>
+
+        <div class="focus reveal">
+          <h4>Focus · 1. How do we feel about this case?</h4>
+          <div class="two-voices">
+            <div class="v">
+              <span class="v-title">🎒 Students feel…</span>
+              <ul>
+                <li><strong>Relief.</strong> Something finally meets me where I am.</li>
+                <li><strong>Excitement.</strong> It's like a private tutor that never gets tired.</li>
+                <li><strong>Confidence.</strong> I stop panicking before exams.</li>
+                <li><strong>Guilt.</strong> Why do I feel like I'm cheating — even when I'm not?</li>
+                <li><strong>Fear.</strong> What if I fall behind everyone who uses it well?</li>
+              </ul>
+            </div>
+            <div class="v">
+              <span class="v-title">📚 Educators feel…</span>
+              <ul>
+                <li><strong>Concern.</strong> For the thinking of the next generation.</li>
+                <li><strong>Frustration.</strong> My teaching effort seems to get bypassed.</li>
+                <li><strong>Sadness.</strong> The spark of discussion is fading.</li>
+                <li><strong>Hurt.</strong> As if the human parts of learning are being replaced.</li>
+                <li><strong>Hope.</strong> Maybe, just maybe, it could be used well.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="focus reveal" style="--d:.1s">
+          <h4>Focus · 2. Will I be able to solve it?</h4>
+          <p>There is real doubt on both sides. But the doubt is not a wall — it's a sign that people <em>care</em>. That's a good starting point for an honest discussion.</p>
+        </div>
+
+        <div class="question reveal">
+          <h4>Question · What is our gut reaction while trying to solve this?</h4>
+          <p>Our gut says: <em>“We don't want to take away something that helps students feel less afraid. And we don't want to silently watch real learning fade.”</em> Both are true. We refuse to choose between the two.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BLACK HAT ============ -->
+  <section class="hat black" id="black">
+    <div class="hat-inner">
+      <div class="hat-mark"><span class="orb orb-black"></span></div>
+      <div class="hat-body">
+        <span class="hat-tag">Hat 4 · Caution &amp; Risk</span>
+        <h2 class="shimmer">Black Hat — What could go wrong?</h2>
+        <p class="hat-purpose">Purpose: to be the careful friend who asks the hard questions before we leap.</p>
+
+        <div class="focus reveal">
+          <h4>Focus · 1. What could go wrong?</h4>
+          <ul>
+            <li><strong>Shortcut learning.</strong> Students memorise quiz answers instead of concepts — “I passed the quiz” becomes a stand-in for “I understand.”</li>
+            <li><strong>Erosion of critical thinking.</strong> The app does the reasoning; over time, the muscles of problem-solving weaken.</li>
+            <li><strong>Group learning fades.</strong> Why discuss when a chatbot answers instantly? Collaboration quietly disappears.</li>
+            <li><strong>False confidence.</strong> Instant answers feel like mastery — right up until the real, unplugged exam.</li>
+            <li><strong>Data privacy.</strong> The app learns your weak points, study habits, even your anxious moments. Who holds that? For how long?</li>
+            <li><strong>Equity gap.</strong> Not everyone has a good phone, data, or time to drown in screens.</li>
+            <li><strong>Cheating pressure.</strong> A chatbot that “answers doubts instantly” is one step from writing the whole answer.</li>
+          </ul>
+        </div>
+
+        <div class="focus reveal" style="--d:.1s">
+          <h4>Focus · 2. What are the potential obstacles or problems?</h4>
+          <p>
+            The biggest obstacle is <strong>habit</strong> — once a tool becomes the default, it's very hard
+            to change course. Another is <strong>silence</strong>: students and teachers haven't really talked
+            about this openly. A third is <strong>design</strong> — the app is built for convenience, not for
+            depth, so it naturally nudges everyone toward the shortcut.
+          </p>
+        </div>
+
+        <div class="question reveal">
+          <h4>Question · What are the potential downsides and risks involved?</h4>
+          <p>The deepest risk isn't a bad grade. It's a generation that can pass exams but struggles to <em>think</em> when the app isn't there. That is a risk worth taking seriously — and worth designing against.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ YELLOW HAT ============ -->
+  <section class="hat yellow" id="yellow">
+    <div class="hat-inner">
+      <div class="hat-mark"><span class="orb orb-yellow"></span></div>
+      <div class="hat-body">
+        <span class="hat-tag">Hat 5 · Benefits &amp; Value</span>
+        <h2 class="shimmer">Yellow Hat — What's genuinely <em>good</em> about it?</h2>
+        <p class="hat-purpose">Purpose: to look on the bright side — honestly, not naively.</p>
+
+        <div class="focus reveal">
+          <h4>Focus · 1. What are the advantages?</h4>
+          <ul>
+            <li><strong>Accessibility.</strong> A patient, tireless helper for students who are shy to ask in class.</li>
+            <li><strong>Anxiety relief.</strong> Predictable, adaptive practice calms exam fear.</li>
+            <li><strong>Instant feedback.</strong> You know what you got wrong — right now, not in a week.</li>
+            <li><strong>Personal pace.</strong> It meets each student where they are.</li>
+            <li><strong>Early warning.</strong> It can surface weak areas before they become failures.</li>
+            <li><strong>Time for teachers.</strong> If used well, it can surface class-wide confusion so professors focus where it matters.</li>
+          </ul>
+        </div>
+
+        <div class="focus reveal" style="--d:.1s">
+          <h4>Focus · 2. What is the potential upside?</h4>
+          <p>If we shape it — instead of just letting it shape us — the app could become a <strong>bridge</strong>: more students engaged, less fear, and more classroom time spent on the deep, human discussions that no app can replace.</p>
+        </div>
+
+        <div class="question reveal">
+          <h4>Question · What value does it create for this case?</h4>
+          <p>The app is not the enemy. Its <strong>speed and kindness</strong> are real gifts. The problem is never the tool — it's what we let the tool <em>replace</em>. Our job is to protect what's precious while keeping what's useful.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GREEN HAT ============ -->
+  <section class="hat green" id="green">
+    <div class="hat-inner">
+      <div class="hat-mark"><span class="orb orb-green"></span></div>
+      <div class="hat-body">
+        <span class="hat-tag">Hat 6 · Creativity &amp; New Ideas</span>
+        <h2 class="shimmer">Green Hat — What if we <em>redesigned</em> the habit?</h2>
+        <p class="hat-purpose">Purpose: to imagine fresh, creative paths — and a backup plan.</p>
+
+        <div class="focus reveal">
+          <h4>Focus · 1. What new ideas or creative solutions can we generate?</h4>
+          <div class="idea">
+            <span class="idea-n">01</span>
+            <div>
+              <h5>“Prove it” mode (teach-back)</h5>
+              <p>After each quiz, the app asks you to explain the concept <em>in your own words</em> — typed or spoken. Only then does it unlock the next level. Passing a quiz is no longer enough; you must show you understand.</p>
+            </div>
+          </div>
+          <div class="idea">
+            <span class="idea-n">02</span>
+            <div>
+              <h5>An AI that asks, doesn't answer</h5>
+              <p>Flip the chatbot into a <strong>Socratic coach</strong>: instead of handing over the answer, it replies with questions — “Why do you think that's correct?” — guiding the student to reason it out themselves.</p>
+            </div>
+          </div>
+          <div class="idea">
+            <span class="idea-n">03</span>
+            <div>
+              <h5>Bring back the group</h5>
+              <p>Add <strong>collaboration quests</strong> — shared puzzles, group challenges, and discussion prompts where students must talk to each other to solve, not just tap a screen.</p>
+            </div>
+          </div>
+          <div class="idea">
+            <span class="idea-n">04</span>
+            <div>
+              <h5>“Depth mode” that blocks the shortcut</h5>
+              <p>When the app senses a topic is being memorised, not understood, it quietly <em>locks the shortcut</em> and opens deeper explanations with real-world examples instead.</p>
+            </div>
+          </div>
+          <div class="idea">
+            <span class="idea-n">05</span>
+            <div>
+              <h5>A teacher dashboard that helps, not replaces</h5>
+              <p>Give professors an <strong>opt-in, class-level view</strong> of common confusions — so they can teach <em>toward</em> the gaps, leaving the human warmth of the classroom intact.</p>
+            </div>
+          </div>
+          <div class="idea">
+            <span class="idea-n">06</span>
+            <div>
+              <h5>Unplugged workshops</h5>
+              <p>Reserve weekly “screens-off” study circles where students discuss what they learned — re-connecting the app to the human room around it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="focus reveal" style="--d:.1s">
+          <h4>Focus · 2. What are some different perspectives?</h4>
+          <p>Swap the frame from <strong>“app vs. classroom”</strong> to <strong>“tool that serves a culture of curiosity.”</strong> The real question isn't whether students use the app — it's whether the app is teaching them to <em>need it</em> or to <em>think past it</em>.</p>
+        </div>
+
+        <div class="question reveal">
+          <h4>Question · 1. What is our primary plan?</h4>
+          <p><strong>Primary plan:</strong> Re-frame the app as a <em>coach</em>, not a <em>shortcut</em> — and run a <strong>one-semester pilot</strong> with the six ideas above (teach-back, Socratic chatbot, group quests, depth mode, teacher dashboard, unplugged circles). Students get the help they love; teachers get evidence, not rumours.</p>
+        </div>
+
+        <div class="question alt reveal">
+          <h4>Question · 2. What is our alternative plan if the primary one fails?</h4>
+          <p><strong>Alternative plan:</strong> Restrict the app to an <strong>optional revision supplement</strong>, with a course-design cap on how much it can replace face-to-face work. If misuse persists, reduce the chatbot to <strong>hints only</strong> (never full answers) and require in-person demonstration of every “unlocked” topic. If still harmful, pause adoption until the design supports understanding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONCLUSION ============ -->
+  <section class="section conclusion" id="conclusion">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Blue Hat returns · The conclusions</span>
+        <h2 class="shimmer">So… what do we decide?</h2>
+      </div>
+
+      <div class="concl-grid">
+        <div class="concl-card reveal">
+          <h4>What is our thinking process?</h4>
+          <p>We walked one colour at a time — facts, then plan, then feelings, then fears, then hopes, then ideas. That ordering let every voice speak without drowning the others. That <em>is</em> structured parallel thinking.</p>
+        </div>
+        <div class="concl-card reveal" style="--d:.15s">
+          <h4>What are our conclusions?</h4>
+          <p>The app is neither a miracle nor a menace. It's a tool whose outcome depends on <strong>how we shape it</strong>. We don't ban it, and we don't worship it — we <strong>redesign the habit</strong>: demand understanding, keep collaboration alive, and let AI do the lifting while humans do the thinking.</p>
+        </div>
+        <div class="concl-card reveal" style="--d:.3s">
+          <h4>How should we proceed?</h4>
+          <ul>
+            <li>Propose the <strong>pilot</strong> with student reps and faculty together at one table.</li>
+            <li>Measure <strong>depth</strong> — understanding tests, not just quiz speed.</li>
+            <li>Review after a semester, listen to both sides, and adjust.</li>
+            <li>Protect the human room: discussion, mentorship, and wonder stay non-negotiable.</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="closing-note">“The goal was never to win an argument. It was to make sure no student is left behind — <em>and</em> no young thinker is quietly lost.”</p>
+    </div>
+  </section>
+
+  <!-- ============ POSTER ============ -->
+  <section class="section poster-section" id="poster">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="eyebrow">Digital poster · pitching the solution</span>
+        <h2 class="shimmer">“Same app. New brain.”</h2>
+      </div>
+
+      <div class="poster" id="poster">
+        <div class="poster-glow"></div>
+        <div class="poster-top">
+          <span class="poster-kicker">CASE SCENARIO 2 · SIX THINKING HATS</span>
+          <h3>Don't ban the app.<br>Teach it to <em>think</em>.</h3>
+          <p class="poster-tagline">Turning a shortcut into a coach — so speed never steals understanding.</p>
+        </div>
+        <div class="poster-mid">
+          <div class="poster-pill pill-win">🎯 Teach-back “prove it” mode</div>
+          <div class="poster-pill pill-win">💬 An AI that asks, not just answers</div>
+          <div class="poster-pill pill-win">👥 Group quests bring discussion back</div>
+          <div class="poster-pill pill-win">🧠 Depth mode blocks the shortcut</div>
+          <div class="poster-pill pill-win">📊 Teacher dashboard helps, never replaces</div>
+        </div>
+        <div class="poster-bottom">
+          <p class="poster-emp">The pilot: one semester · student reps + faculty together · measure <em>depth</em>, not just speed.</p>
+          <p class="poster-foot">Six Thinking Hats · Edward de Bono · “Same app. New brain.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-hearts">
+      <span class="heart beat">♥</span>
+    </div>
+    <p>The Six Thinking Hats · Edward de Bono · Case Scenario 2 — AI-Powered Exam Preparation App</p>
+    <p>Critical Thinking · <strong>Dedicated to Riddhi Pankhadiwala Ma'am</strong></p>
+    <p class="footer-sub">Made with a lot of thinking, for a teacher who taught us to think 🧠</p>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
